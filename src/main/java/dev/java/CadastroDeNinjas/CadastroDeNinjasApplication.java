@@ -7,10 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CadastroDeNinjasApplication {
 
 	public static void main(String[] args) {
+		// Inicializa a aplicação Spring Boot
 		SpringApplication.run(CadastroDeNinjasApplication.class, args);
 	}
-
-
-
-
 }
