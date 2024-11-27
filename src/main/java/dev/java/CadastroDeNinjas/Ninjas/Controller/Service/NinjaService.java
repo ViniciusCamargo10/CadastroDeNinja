@@ -1,10 +1,11 @@
 package dev.java.CadastroDeNinjas.Ninjas.Controller.Service;
 
+
+import org.hibernate.query.named.NameableQuery;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
 @Service
 public class NinjaService {
 
@@ -25,5 +26,9 @@ public class NinjaService {
         return ninjaPorId.orElse(null);
     }
 
+    // Criar um novo ninja
+    public NinjaModel criarNinja(NinjaModel ninja) {
+        return ninjaRepository.save(ninja);
+    }
 
 }
