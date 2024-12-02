@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.lang.model.element.Name;
+
 // transforma a class em entidade (Banco de dados)
 @Entity
 
@@ -36,6 +38,9 @@ public class NinjaModel {
 
     @Column(name = "img_url")
     private String imgUrl;
+
+    @Column(name = "rank")
+    private String rank;
 
     @Column(name = "idade")
     private int idade;
